@@ -1,0 +1,1 @@
+- right side of flex is not working with if left photo is absolute

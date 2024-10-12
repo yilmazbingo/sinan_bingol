@@ -1,0 +1,27 @@
+.about-me-text {
+  // font-size: 1.5rem; /* Adjusts the font size to be more visible */
+  font-weight: 600; /* Makes the text a bit bolder for emphasis */
+  color: #1d3557; /* A deep blue color that conveys professionalism and trust */
+  line-height: 1.6; /* Increases readability with appropriate line spacing */
+  text-align: center; /* Centers the text for balanced alignment */
+  padding: 2rem; /* Adds space around the text */
+  background-color: #f1faee; /* A light, subtle background to highlight the text */
+  border-radius: 8px; /* Slight rounding of the corners for a polished look */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Adds a gentle shadow to make it stand out */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+.motto-text {
+  // font-size: 1.75rem; /* Slightly larger to stand out */
+  font-weight: 700; /* Bold to emphasize the importance */
+  color: #e63946; /* A vibrant, eye-catching color like red */
+  text-align: center; /* Center aligns the motto for focus */
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: block; /* Ensures it stays on a new line */
+  background-color: #a8dadc; /* Soft contrast background to highlight */
+  border-radius: 8px; /* Rounded corners for a polished look */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Adds hover interaction */
+}
+.about-me-text:hover {
+  transform: scale(1.05); /* Slight enlargement on hover for interactivity */
+}
