@@ -22,7 +22,8 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
-
+//  @layer directive allows you to define custom styles that are layered into Tailwind's existing set of utilities, components, or base styles
+// Tailwind CSS is built around layers (base, components, and utilities). By using @layer utilities, you're extending or adding new classes to the utilities layer, which contains most of Tailwind’s helper classes (like p-4, m-2, etc.).
 @layer utilities {
   .text-balance {
     text-wrap: balance;

@@ -30,7 +30,7 @@ export default function Houses() {
         {images.map((image, index) => (
           <div
             key={index}
-            className="flex justify-center items-center hover:scale-110"
+            className="flex justify-center house__card items-center hover:scale-110"
           >
             <Image
               src={image.src}
