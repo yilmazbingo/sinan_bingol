@@ -29,16 +29,16 @@ const Contact = () => {
 
     emailjs
       .send(
-        process.env.EMAILJS_SERVICE_ID as string,
-        process.env.EMAILJS_TEMPLATE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID as string,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID as string,
         {
           from_name: form.name,
           to_name: "Sinan Bingol",
           from_email: form.email,
-          to_email: "sujata@jsmastery.pro",
+          to_email: process.env.NEXT_PUBLIC_RECEIVE_EMAIL_ADDRESS,
           message: form.message,
         },
-        process.env.EMAILJS_PUBLIC_KEY
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -60,7 +60,7 @@ const Contact = () => {
         },
         (error) => {
           setLoading(false);
-          console.error(error);
+          console.error("error in sending email", error);
 
           showAlert({
             show: true,
