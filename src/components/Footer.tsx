@@ -1,6 +1,6 @@
 import Image from "next/image";
 import TwitterIcon from "../../public/icons/twitter.svg";
-import InstagramIcon from "../../public/icons/instagram.svg";
+import InstagramIcon from "../../public/icons/icons8-instagram.svg";
 
 const Footer = () => {
   return (
